@@ -1,0 +1,4 @@
+domain,count,max_risk,categories,primary_category,recommended_alias,bank_safe_alias
+examplebank.com,3,95,auth,finance,finance-examplebank@corradosec.com,examplebank@corradosec.com
+examplenetwork.com,1,60,auth,cloud,auth-examplenetwork@corradosec.com,examplenetwork@corradosec.com
+examplecareer.com,2,50,career,career,career-examplecareer@corradosec.com,examplecareer@corradosec.com
