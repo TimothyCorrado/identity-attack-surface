@@ -47,12 +47,13 @@ Gmail API → Exposure Scanner → Risk Scoring Engine → Alias Generator → S
 
 ## Example Output
 
-domain,max_risk,recommended_alias
-robinhood.com,100,robinhood@corradosec.com
+domain,max_risk,recommended_alias  
 
-paypal.com,70,paypal@corradosec.com
+robinhood.com,100,robinhood@corradosec.com  
 
-microsoft.com,85,auth-microsoft@corradosec.com
+paypal.com,70,paypal@corradosec.com  
+
+microsoft.com,85,auth-microsoft@corradosec.com  
 
 
 ---
