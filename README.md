@@ -2,6 +2,15 @@
 
 Cloud-native security tool that discovers where an identity is exposed across SaaS platforms, ranks risk, and generates compartmentalized email aliases to reduce account takeover blast radius.
 
+```mermaid
+flowchart LR
+    A[Gmail API] --> B[Exposure Scanner]
+    B --> C[Risk Scoring Engine]
+    C --> D[Alias Generator]
+    D --> E[Cloudflare Email Routing]
+    E --> F[Identity Isolation]
+```
+
 ## Why this exists
 
 Email identity is the primary pivot point in modern account takeover.  
@@ -128,6 +137,52 @@ Real personal exposure data excluded.
 - Enterprise IAM integration
 
 ---
+
+## Quickstart
+
+### Run with Docker
+
+Build container:
+
+```bash
+docker build -t identity-scan .
+```
+
+Run in demo mode (no credentials required):
+
+```bash
+docker run --rm -e DEMO_MODE=1 identity-scan
+```
+
+Run with Gmail integration (local secure mode):
+
+```bash
+docker run --rm -v "%cd%\secrets:/secrets:ro" -v "%cd%\output:/app/output" -e GMAIL_TOKEN_PATH=/secrets/token.json identity-scan
+```
+
+Requires local Gmail API credentials (not included in repository).
+
+---
+
+### Run locally without Docker
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run ranking:
+
+```bash
+python rank_exposures.py
+```
+
+Generate aliases:
+
+```bash
+python app/alias_generator.py
+```
 
 ## Author
 
