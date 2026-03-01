@@ -1,6 +1,6 @@
 # Cloud Identity Attack Surface Scanner
 
-Cloud-native security tool that discovers where an identity is exposed across SaaS platforms, ranks risk, and generates compartmentalized email aliases to reduce account takeover blast radius.
+Security project focused on identity attack surface discovery, alias compartmentalization, and phishing-resistant authentication deployment using FIDO2 hardware security keys.
 
 ```mermaid
 flowchart LR
@@ -107,14 +107,53 @@ Alias isolation breaks attack chain.
 
 ## Skills Demonstrated
 
-Cloud Security Engineering  
-IAM Security  
-Security Automation  
-Python Security Tooling  
-OAuth2 Integration  
-Attack Surface Management  
-Containerization  
-Security-Focused Architecture  
+### Identity and Access Management (IAM)
+
+- Domain-based email alias compartmentalization
+- Identity attack surface enumeration and risk classification
+- Tiered identity architecture design
+
+### Authentication Security
+
+- FIDO2 hardware key deployment (YubiKey 5C NFC)
+- Passkey and phishing-resistant MFA implementation
+- SMS MFA deprecation and recovery model hardening
+
+### Cloud Security
+
+- Cloudflare identity and DNS security hardening
+- Domain infrastructure protection
+- Zero Trust identity principles applied to production accounts
+
+### Threat Modeling
+
+- Credential stuffing risk mitigation
+- SIM swap attack mitigation
+- Phishing attack resistance architecture
+- Identity blast radius reduction
+
+### Security Engineering
+
+- Security architecture documentation
+- Deployment planning and validation
+- Identity recovery and disaster recovery design
+
+### Tools and Technologies
+
+- Cloudflare
+- FIDO2 / WebAuthn
+- YubiKey hardware authentication
+- Google Password Manager
+- GitHub
+- Python (identity scanner)
+
+---
+
+## Project Status
+
+Hardware-backed authentication deployment in progress.
+
+See `/identity` folder for full architecture and deployment details.
 
 ---
 
